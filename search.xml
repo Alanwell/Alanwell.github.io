@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[inspiration]]></title>
+    <url>%2F2018%2F09%2F20%2Finspiration%2F</url>
+    <content type="text"><![CDATA[摘录史蒂芬平克在《风格的感觉》一书中指出：写作是个把网状的思考，用树状的语法结构，转换成线性字符串的过程（参见 “The Web, the Tree, and the String” 一章）。]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Program]]></title>
+    <url>%2F2018%2F09%2F20%2Fprogram%2F</url>
+    <content type="text"><![CDATA[Title:No Information]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2018%2F09%2F12%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to My Blog! This is my very first blog based on Hexo. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
+</search>
