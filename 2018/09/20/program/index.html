@@ -81,14 +81,14 @@
 
 <meta name="description" content="域名解析的一般步骤：chrome浏览器为例,其他浏览器原理相同  Chrome浏览器 会首先搜索浏览器自身的DNS缓存（缓存时间比较短，大概只有1分钟，且只能容纳1000条缓存），看自身的缓存中是否有www.baidu.com。   注：我们怎么查看Chrome自身的缓存？可以使用 chrome://net-internals/#dns 来进行查看   如果浏览器自身的缓存里面没有找到对应的条目，">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Program">
+<meta property="og:title" content="Summary">
 <meta property="og:url" content="http://yoursite.com/2018/09/20/program/index.html">
 <meta property="og:site_name" content="My Blog">
 <meta property="og:description" content="域名解析的一般步骤：chrome浏览器为例,其他浏览器原理相同  Chrome浏览器 会首先搜索浏览器自身的DNS缓存（缓存时间比较短，大概只有1分钟，且只能容纳1000条缓存），看自身的缓存中是否有www.baidu.com。   注：我们怎么查看Chrome自身的缓存？可以使用 chrome://net-internals/#dns 来进行查看   如果浏览器自身的缓存里面没有找到对应的条目，">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-26T02:09:06.794Z">
+<meta property="og:updated_time" content="2018-09-26T06:19:37.099Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Program">
+<meta name="twitter:title" content="Summary">
 <meta name="twitter:description" content="域名解析的一般步骤：chrome浏览器为例,其他浏览器原理相同  Chrome浏览器 会首先搜索浏览器自身的DNS缓存（缓存时间比较短，大概只有1分钟，且只能容纳1000条缓存），看自身的缓存中是否有www.baidu.com。   注：我们怎么查看Chrome自身的缓存？可以使用 chrome://net-internals/#dns 来进行查看   如果浏览器自身的缓存里面没有找到对应的条目，">
 
 
@@ -125,7 +125,7 @@
 
 
 
-  <title>Program | My Blog</title>
+  <title>Summary | My Blog</title>
   
 
 
@@ -160,7 +160,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle">All work and no play makes Jack a dull boy</p>
+        <p class="site-subtitle">回忆是一条没有尽头的路</p>
       
   </div>
 
@@ -293,7 +293,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Program</h1>
+          <h1 class="post-title" itemprop="name headline">Summary</h1>
         
 
         <div class="post-meta">
@@ -337,7 +337,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1.5k
+                  2.2k
                 </span>
               
 
@@ -353,7 +353,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  5
+                  7
                 </span>
               
             </div>
@@ -396,13 +396,24 @@
 <li>如果第6步也没有查询成功，那么客户端就要进行广播查找</li>
 <li>如果第7步也没有成功，那么客户端就读取LMHOSTS文件（和HOSTS文件同一个目录下，写法也一样）如果第八步还没有解析成功，那么就宣告这次解析失败，那就无法跟目标计算机进行通信。只要这八步中有一步可以解析成功，那就可以成功和目标计算机进行通信。</li>
 </ol>
-<h2 id="如何解决Python版本共存问题"><a href="#如何解决Python版本共存问题" class="headerlink" title="如何解决Python版本共存问题"></a>如何解决Python版本共存问题</h2><pre><code>一种神奇的解决方式
+<h2 id="如何解决Python版本共存问题："><a href="#如何解决Python版本共存问题：" class="headerlink" title="如何解决Python版本共存问题："></a>如何解决Python版本共存问题：</h2><pre><code>一种神奇的解决方式
 </code></pre><ul>
 <li>由于历史原因，Python有两个大的版本分支，Python2和Python3，又由于一些库只支持某个版本分支，所以需要在电脑上同时安装Python2和Python3，因此如何让两个版本的Python兼容，如何让脚本在对应的Python版本上运行，这个是值得总结的。</li>
 <li>对于Windows，就有点复杂了。因为不论python2还是python3，python可执行文件都叫python.exe，在cmd下输入python得到的版本号取决于环境变量里哪个版本的python路径更靠前，毕竟windows是按照顺序查找的。</li>
 <li>这就带来一个问题了，如果你想用python2运行一个脚本，一会你又想用python3运行另一个脚本，你怎么做？来回改环境变量显然很麻烦。</li>
 <li>网上很多办法比较简单粗暴，把两个python.exe改名啊，一个改成python2.exe，一个改成python3.exe。这样做固然可以，但修改可执行文件的方式，毕竟不是很好的方法。</li>
 <li>我仔细查找了一些python技术文档，发现另外一个我觉得比较好的解决办法。<br>  <strong>借用py的一个参数来调用不同版本的Python。py -2调用python2，py -3调用的是python3.</strong></li>
+</ul>
+<h2 id="Canvas、SVG和WebGL三者的区别："><a href="#Canvas、SVG和WebGL三者的区别：" class="headerlink" title="Canvas、SVG和WebGL三者的区别："></a>Canvas、SVG和WebGL三者的区别：</h2><pre><code>概述：Canvas 位图，是需要自己画点的白板； 
+    SVG 矢量图，是给数据就可以绘制点、线、图形的，基于 XML 的标记语言； 
+    WebGL 3D位图，是基于 Canvas 的 3D 框架。 
+</code></pre><ul>
+<li>SVG只是一种矢量图形文件格式， 不仅现在的浏览器都支持，很多主流的系统也都支持。可以代替一些图片,多用于图标,以及图表上,优势在于拥有HTML的event事件,交互起来很方便。 </li>
+<li>Canvas 是HTML5新增的一个元素对象，名副其实就是一个画布，浏览器 js 配有相应的操作api，可以不再依赖其他的API或组件而直接绘图，相当于2D的API。一般用于绘制比较复杂的动画,做游戏之类的,由于canvas是HTML5带的,所以不支持低版本浏览器,特别是IE,canvas只是一个画布,绘制上去的东西,例如图片,都是转换成像素点绘制上去的,所以没有event事件,如果需要添加交互事件,需要自己手动计算绘制的对象所在坐标以及层级,还好这部分有第三方库。基本上除了HTML5游戏,一些酷炫的动画,正常的网页交互很少用到。 </li>
+<li>WebGL 是以 OpenGL ES 2.0 为基础的一套 浏览器 3D图形API （HTML5），在编程概念上与OpenGL ES 2.0 几乎是完全通用的，同样采用可编程渲染管线，也就是每个顶点的处理受到一小段Vertex Shader代码的控制，每个像素的绘制过程也受到一小段Fragment Shader代码的控制。WebGL主要是3D为主， 不过2D的绘图要求也可以变通来实现。WebGL 无论如何都需要一个显示对象来呈现，这个对象就是 Canvas，仅此而已，WebGL不对Canvas有任何附加的操作API， 那部分属于浏览器js支持的范畴。 可看作能在浏览器上运行的OpenGL,WebGL的HTML节点名称用的也是canvas,但是他的渲染则和canvas不同,他可以支持硬件加速,支持3D,可用于3D游戏的开发,目前很少有3D的HTML5游戏,现在你能看到很多酷炫的图形交互的3D图表,大多用WebGL来渲染的。WebGL 也继承 OpenGL ES 2.0 的兼容性支持能力， 在不同的设备上做有限的支持，需要运行时查询。<br>Three.js、Babylon.js、Blender4Web等是几种知名的 WebGL 开发框架，对 WebGL 基础操作做了大量的封装，可以拿来就用， 即使不了解 WebGL规范的细节。<blockquote>
+<p>用 途：<br>Canvas 适用于位图，高数据量高绘制频率（帧率）的场景，如动画、游戏；<br>SVG 适用于矢量图，低数据量低绘制频率的场景，如图形、图表；<br>WebGL 主要用来做 3D 展示、动画、游戏。</p>
+</blockquote>
+</li>
 </ul>
 
       
@@ -424,7 +435,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://yoursite.com/2018/09/20/program/" title="Program">http://yoursite.com/2018/09/20/program/</a>
+    <a href="http://yoursite.com/2018/09/20/program/" title="Summary">http://yoursite.com/2018/09/20/program/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -581,7 +592,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#域名解析的一般步骤："><span class="nav-number">1.</span> <span class="nav-text">域名解析的一般步骤：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何解决Python版本共存问题"><span class="nav-number">2.</span> <span class="nav-text">如何解决Python版本共存问题</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#域名解析的一般步骤："><span class="nav-number">1.</span> <span class="nav-text">域名解析的一般步骤：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何解决Python版本共存问题："><span class="nav-number">2.</span> <span class="nav-text">如何解决Python版本共存问题：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Canvas、SVG和WebGL三者的区别："><span class="nav-number">3.</span> <span class="nav-text">Canvas、SVG和WebGL三者的区别：</span></a></li></ol></div>
             
 
           </div>
@@ -615,7 +626,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">1.6k</span>
+    <span title="Site words total count">2.5k</span>
   
 </div>
 
