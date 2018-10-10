@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="My Blog">
 <meta property="og:description" content="域名解析的一般步骤：chrome浏览器为例,其他浏览器原理相同  Chrome浏览器 会首先搜索浏览器自身的DNS缓存（缓存时间比较短，大概只有1分钟，且只能容纳1000条缓存），看自身的缓存中是否有www.baidu.com。   注：我们怎么查看Chrome自身的缓存？可以使用 chrome://net-internals/#dns 来进行查看   如果浏览器自身的缓存里面没有找到对应的条目，">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-27T03:08:33.607Z">
+<meta property="og:updated_time" content="2018-09-27T03:10:16.708Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Summary">
 <meta name="twitter:description" content="域名解析的一般步骤：chrome浏览器为例,其他浏览器原理相同  Chrome浏览器 会首先搜索浏览器自身的DNS缓存（缓存时间比较短，大概只有1分钟，且只能容纳1000条缓存），看自身的缓存中是否有www.baidu.com。   注：我们怎么查看Chrome自身的缓存？可以使用 chrome://net-internals/#dns 来进行查看   如果浏览器自身的缓存里面没有找到对应的条目，">
@@ -160,7 +160,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle">回忆是一条没有尽头的路</p>
+        <p class="site-subtitle">莫愁前路无知己，天下谁人不识君</p>
       
   </div>
 
@@ -418,7 +418,7 @@
 <h2 id="深入理解javascript原型，闭包，继承和原型链"><a href="#深入理解javascript原型，闭包，继承和原型链" class="headerlink" title="深入理解javascript原型，闭包，继承和原型链"></a>深入理解javascript原型，闭包，继承和原型链</h2><pre><code>待补充
 </code></pre><ol>
 <li><strong>一切（引用类型）都是对象，对象是属性的集合。</strong><br>undefined, number, string, boolean属于简单的值类型，通过typeof来判断；函数、数组、对象、null都是引用类型，通过instanceof来判断。对象里面的一切都是属性，只有属性，没有方法，它的属性表示为键值对的形式。一切引用类型都是对象，对象都是通过函数来创建的。</li>
-<li><strong>prototype原型</strong><br>每一个函数都有一个属性叫做prototype，每一个对象(注也包括函数)都有一个属性叫做<em>proto</em>，其实可以把<em>proto</em>叫做隐式原型。 每一个函数的prototype属性值是一个对象（属性的集合，再次强调！），默认的只有一个叫做constructor的属性，指向这个函数本身。每一个对象都有一个属性叫做<em>proto</em>，指向创建该对象的函数的prototype。但是Object.prototype确实一个特例——它的<strong>proto</strong>指向的是null。</li>
+<li><strong>prototype原型</strong><br>每一个函数都有一个属性叫做prototype，每一个对象(也包括函数)都有一个属性叫做<em>proto</em>，其实可以把<em>proto</em>叫做隐式原型。 每一个函数的prototype属性值是一个对象（属性的集合，再次强调！），默认的只有一个叫做constructor的属性，指向这个函数本身。每一个对象都有一个属性叫做<em>proto</em>，指向创建该对象的函数的prototype。但是Object.prototype确实一个特例——它的<strong>proto</strong>指向的是null。</li>
 <li><strong>原型链和继承</strong><br>访问一个对象的属性时，先在基本属性中查找，如果没有，再沿着<strong>proto</strong>这条链向上找，这就是原型链。根据原型链可以确定继承关系。由于所有的对象的原型链都会找到Object.prototype，因此所有的对象都会有Object.prototype的方法。这就是所谓的“继承”。</li>
 </ol>
 
